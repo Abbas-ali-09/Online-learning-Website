@@ -1,0 +1,583 @@
+<!--<?php
+session_start();
+include("connect.php");
+?>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Study Zone</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+
+    <!--swiper css cdn
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+
+    <!-- css file-->
+   <link rel="stylesheet" href="css-styling-files/home.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+   <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+      <nav
+        class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #5c4237;"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><!--<span class="text-secondary">STUDY</span
+            ><span class="text-info">ZONE</span>-->
+            <img
+              src="images/sz_white.png"
+              class="img-fluid"
+              alt=""
+              width="70"
+              height="60"
+            />
+          </a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html" aria-current="page" style="--i: 1"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about" style="--i: 2">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#course" style="--i: 3">Course</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" style="--i: 4" >Contact</a>
+              </li>
+            </ul>
+
+            <a href="index.html">
+            
+             
+                <button class="nav-btn btn my-2 my-sm-0 ms-2" type="submit">
+                  Get Strated
+                </button>
+            
+          </a>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    <main>
+      <!--container 1-->
+
+
+      <div class="container-fluid mt-5">
+        <div
+          id="carouselId"
+          class="carousel slide my-4"
+          data-bs-ride="carousel"
+        >
+          <ol class="carousel-indicators d-none">
+            <li
+              data-bs-target="#carouselId"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="First slide"
+            ></li>
+            <li
+              data-bs-target="#carouselId"
+              data-bs-slide-to="1"
+              aria-label="Second slide"
+            ></li>
+            <li
+              data-bs-target="#carouselId"
+              data-bs-slide-to="2"
+              aria-label="Third slide"
+            ></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <!-- carousel 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center align-items-center g-2">
+                <div class="col-sm-12 col-md-6">
+                  <img
+                    src="web-img/carousel-1.svg"
+                    class="w-100 d-block"
+                    alt="Second slide"
+                  />
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <center>
+                    <h3 class="animation-show">
+                      The Best Online <br />Learning Platform
+                    </h3>
+                  </center>
+                </div>
+              </div>
+            </div>
+
+            <!-- carousel 2 -->
+
+            <div class="carousel-item">
+              <div class="row justify-content-center align-items-center g-2">
+                <div class="col-sm-12 col-md-6">
+                  <center>
+                    <h3 class="animation-show">
+                      Get Education Online <br />
+                      From Your Home
+                    </h3>
+                  </center>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <img
+                    src="web-img/carousel-2.svg"
+                    class="w-100 d-block"
+                    alt="Second slide"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- carousel 3 -->
+
+            <div class="carousel-item">
+              <div class="row justify-content-center align-items-center g-2">
+                <div class="col-sm-12 col-md-6">
+                  <img
+                    src="web-img/carousel-3.svg"
+                    class="w-100 d-block"
+                    alt="First slide"
+                  />
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                  <center>
+                    <h3 class="animation-show">
+                      New Way To <br />Learn From Home
+                    </h3>
+                  </center>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="prev"
+          ></button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="next"
+          ></button>
+        </div>
+
+        <!--row 1-->
+
+       
+
+      <div class="container-fluid">
+          
+    
+
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="row">
+              <div class="col-20">
+                <div class="card bg-transparent">
+                  <div class="card-body container-2">
+                    <img
+                      src="web-img/mortarboard.png"
+                      class="img-fluid rounded"
+                      alt=""
+                    />
+                    <div class="content">
+                      <h3 class="card-title">150+</h3>
+                      <p class="card-text">Course</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="row">
+              <div class="col-20">
+                <div class="card bg-transparent">
+                  <div class="card-body container-2">
+                    <img
+                      src="web-img/graduating-student.png"
+                      class="img-fluid rounded"
+                      alt=""
+                    />
+                    <div class="content">
+                      <h3 class="card-title">700+</h3>
+                      <p class="card-text">Students</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="row">
+              <div class="col-20">
+                <div class="card bg-transparent">
+                  <div class="card-body container-2">
+                    <img
+                      src="web-img/video.png"
+                      class="img-fluid rounded"
+                      alt=""
+                    />
+                    <div class="content">
+                      <h3 class="card-title">50+</h3>
+                      <p class="card-text">Teachers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="row">
+              <div class="col-20">
+                <div class="card bg-transparent">
+                  <div class="card-body container-2">
+                    <img
+                      src="web-img/smile.png"
+                      class="img-fluid rounded"
+                      alt=""
+                    />
+                    <div class="content">
+                      <h3 class="card-title">95%</h3>
+                      <p class="card-text">Satisfaction</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!--container 2 about-->
+        <div class="container-fluid" id="about">
+          
+           
+
+          <div class="row justify-content-center align-items-center g-2">
+              <div class="mb-5"> 
+                <center>
+                 <h3 class="about">A B O U T &nbsp;U S</h3>
+                </center>
+              </div>
+
+              <div class="col-sm-12 col-md-6  about-info">
+                <center>
+                  <h4>What you think about us ?</h4>
+                  
+                 <p>
+                  Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, discussion and directed research.
+                  Educational website can include websites that have videos or topic related resources that act as tools to enhance learning. These websites help make the process of learning  programming language and attractive to the student, especially in today's age.
+               
+                 </p>
+  
+                </center>
+              </div>
+
+
+              <div class="col-sm-12 col-md-6 ">
+                <center>
+                  <img
+                    src="web-img/about-2.svg"
+                    class="img-fluid w-100"
+                    alt=""
+                   
+                  />
+                </center>
+              </div>
+
+
+            </div>
+            
+
+         
+        </div>
+      
+      <!--container 3 course-->
+
+      
+      <div class="container-fluid con-3" id="course">
+
+        <div class="row justify-content-center align-items-center g-2 ">
+
+       
+          <center><h5 action="course" class="course"  >P O P U L A R </h5>
+                  <h4 action="course" class="course" >C O U R S E S</h4></center>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+           <a href="html.html">
+            <div class="card h-100 course-box">
+              <img class="card-img-top" src="images/html.png" alt="Title" />
+              <div class="card-body">
+                <center>
+                  <h4 class="card-title">HTML</h4>
+                  <p class="card-text">Tutorial</p>
+                </center>
+              </div>
+            </div>
+           </a>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <a href="css.html">
+              <div class="card h-100 course-box">
+                <img class="card-img-top" src="images/css.png" alt="Title" />
+                <div class="card-body">
+                  <center>
+                    <h4 class="card-title">CSS</h4>
+                    <p class="card-text">Tutorial</p>
+                  </center>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+           <a href="js.html">
+            <div class="card h-100 course-box">
+              <img class="card-img-top" src="images/js.png" alt="Title" />
+              <div class="card-body">
+                <center>
+                  <h4 class="card-title">JavaScript</h4>
+                  <p class="card-text">Tutorial</p>
+                </center>
+              </div>
+            </div>
+           </a>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+           <a href="bootstrap.html">
+            <div class="card h-100 course-box">
+              <img class="card-img-top" src="images/boostrap.png" alt="Title" />
+              <div class="card-body">
+                <center>
+                  <h4 class="card-title">Bootstrap</h4>
+                  <p class="card-text">Tutorial </p>
+                </center>
+              </div>
+            </div>
+           </a>
+          </div>
+
+        </div>
+
+        <br> 
+        <center>
+          <div class="">
+            <a name="" id="" class="c-btn" href="course1.html" role="button"
+              >Explor More Course</a
+            >
+          </div>
+        </center>
+
+
+        
+      </div>
+
+     
+      
+        <!--row 5 contact-->
+        <div
+          class="container-fluid" 
+        >
+          
+       
+        
+        <div class="row justify-content-center align-items-center g-2" id="contact">
+          <div class="col-sm-12 col-md-6">
+            <img
+              src="web-img/contact-img.svg"
+              class="img-fluid rounded"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <center><h2 class="about my-5" >C O N T A C T</h2></center>
+            <form action="" method="post">
+              <span class="lname">Your Name</span>
+              <input
+                type="text"
+                name="text"
+                class="box"
+                placeholder="Enter Your Full Name"
+                required
+              />
+
+              <span class="lname">Your Email</span>
+              <input
+                type="email"
+                name="email"
+                class="box"
+                placeholder="Enter Your Valid Email"
+                required
+              />
+
+              <span class="lname">Your Number</span>
+              <input
+                type="number"
+                name="num"
+                class="box"
+                placeholder="Enter Your Valid Number"
+                pattern="[0-9]{10}"
+                required
+              />
+<!--
+              <span class="lname">Select Course</span>
+              <select
+                name="course"
+                class="box"
+                style="color: rgba(245, 245, 245, 0.596)"
+              >
+                <option value="" disabled selected>Select The Course --</option>
+
+                <option value="HTML">HTML</option>
+
+                <option value="CSS">CSS</option>
+
+                <option value="JavaScript">JavaScript</option>
+
+                <option value="Bootstrap">Bootstrap</option>
+
+                <option value="PHP">PHP</option>
+
+                <option value="MYSQl">MYSQl</option>
+
+                <option value="React">React</option>
+              </select>
+              -->
+
+              <span class="lname">Select Gender</span>
+              <div class="radio">
+                <input type="radio" name="gender" id="male" value="male" required/>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female" required/>
+                <label for="female">Female</label>
+
+                <input type="radio" name="gender" id="other" value="other" required/>
+                <label for="female">Other</label>
+
+              </div>
+              <a
+                name="send"
+                id=""
+                type="submit"
+                class="contact-btn"
+                href="thk.html"
+                role="button"
+                >Send Message</a
+              >
+
+              
+              
+
+
+
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+<!--
+      
+    <div class="container-fluid">
+        
+      <div class="visme_d  back" data-title="Online Contact Form" data-url="pvmdx194-online-contact-form"
+       data-domain="forms" data-full-page="false" data-min-height="650px" data-form-id="44108"></div>
+        
+     </div>
+-->
+
+
+
+    </main>
+    <footer>
+      <!-- place footer here -->
+
+      <center>
+        <div class="credit-footer">&copy; copyright @ 2024 by <span> study zone</span> all right reserved!</div>
+      </center>
+      
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+   
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+-->
+
+
+    <script src="js-files/home.js"></script>
+
+
+  </body>
+</html>
