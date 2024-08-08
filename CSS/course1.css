@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+body {
+  background-color: #d3ad7f;
+}
+
+.main {
+  overflow: hidden; /* For the animations ScrollReveal */
+}
+
+header .nav-link {
+  position: relative;
+  font-size: 1.1em;
+  color: #d3ad7f;
+
+  text-decoration: none;
+  width: 500;
+  margin-left: 20px;
+  font-weight: 300;
+}
+
+header .nav-btn {
+  background-color: #d3ad7f;
+  color: white;
+  border-radius: 8px;
+}
+
+header .nav-btn:hover {
+  color: #d3ad7f;
+  outline-style: solid;
+  box-shadow: 0 4px 12px hsla(38, 69%, 8%, 1);
+}
+
+/* Container 1 */
+
+.con-1 {
+  background-color: #5c4237;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.text-box {
+  color: #fff;
+  position: relative;
+}
+
+.text-box h1 {
+  font-size: 110px;
+  line-height: 80px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(web-img/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+.text-box h4 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* Container 2 */
+
+.course-box {
+  box-shadow: 0 4px 12px hsla(38, 69%, 8%, 1);
+  margin: 35px;
+  transition: all 0.5s;
+}
+
+.course-box:hover {
+  transform: scale(1.15);
+}
+
+.card-body h4,
+h3,
+p {
+  color: #5c4237;
+}
+
+.c-btn {
+  background-color: #d3ad7f;
+  color: #5c4237;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 10px;
+}
+.c-btn:hover {
+  background-color: #5c4237;
+  color: #d3ad7f;
+  outline-style: solid;
+  box-shadow: 0 4px 12px hsla(38, 69%, 8%, 1);
+}
+
+.con-2 a {
+  text-decoration: none;
+}
